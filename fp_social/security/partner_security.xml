@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <record id="fp_security" model="ir.module.category">
+    <field name="name">FP Social</field>
+  </record>
+
+  <record id="fp_user" model="res.groups">
+    <field name="name">User</field>
+    <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+    <field name="category_id" ref="fp_social.fp_security"/>
+  </record>
+
+  <record id="fp_manager" model="res.groups">
+    <field name="name">Manager</field>
+    <field name="category_id" ref="fp_social.fp_security"/>
+    <field name="users" eval="[(4, ref('base.user_root'))]"/>
+    <field name="implied_ids" eval="[(4, ref('fp_social.fp_user'))]"/>
+  </record>
+
+  <record id="fp_datos_generales" model="res.groups">
+    <field name="name">Datos Generales</field>
+  </record>
+
+  <record id="fp_datos_sociales" model="res.groups">
+    <field name="name">Datos Sociales</field>
+  </record>
+
+  <record id="fp_area_formativo_laboral" model="res.groups">
+    <field name="name">Area Formativo-Laboral</field>
+  </record>
+
+  <record id="fp_area_salud" model="res.groups">
+    <field name="name">Area Salud</field>
+  </record>
+
+  <record id="fp_area_vivienda" model="res.groups">
+    <field name="name">Area Vivienda</field>
+  </record>
+
+  <record id="fp_documentos" model="res.groups">
+    <field name="name">Documentos</field>
+  </record>
+
+  </odoo>

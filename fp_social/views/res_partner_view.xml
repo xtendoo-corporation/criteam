@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <record id="view_partner_inherit_form" model="ir.ui.view">
+    <field name="name">view.partner_inherit.form</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='name']" position="attributes">
+        <attribute name="placeholder">Nombre y Apellidos</attribute>
+      </xpath>
+      <xpath expr="//div[@class='oe_title']/h1" position="after">
+        <group>
+          <field name="genero" attrs="{'invisible': [('student', '=', False)]}"/>
+        </group>
+      </xpath>
+      <xpath expr="//field[@name='phone']" position="after">
+        <field name="telefono_2" attrs="{'invisible': [('student', '=', False)]}"/>
+        <field name="telefono_3" attrs="{'invisible': [('student', '=', False)]}"/>
+      </xpath>
+      <xpath expr="//field[@name='category_id']" position="after">
+        <field name="fecha_nacimiento" attrs="{'invisible': [('student', '=', False)]}"/>
+        <field name="fecha_alta" attrs="{'invisible': [('student', '=', False)]}"/>
+      </xpath>
+      <xpath expr="//field[@name='lang']" position="after">
+        <field name="fecha_solicitud" attrs="{'invisible': [('student', '=', False)]}"/>
+        <field name="fecha_baja" attrs="{'invisible': [('student', '=', False)]}"/>
+	<field name="causas_baja"/>
+      </xpath>
+      <xpath expr="//notebook" position="inside">
+        <page string="Datos generales" name="datos_generales" attrs="{'invisible': [('student', '=', False)]}" groups="fp_social.fp_datos_generales,fp_social.fp_manager">
+          <separator string="Para solicitudes:" style="font-size:15px;"/>
+          <group>
+            <group>
+              <field name="nivel_estudios"/>
+              <field name="nivel_estudios_especifico" attrs="{'invisible': [('nivel_estudios', 'not in', ['grado_bachillerato', 'grado_superior', 'grado_universitario', 'master', 'doctorado'])]}"/>
+            </group>
+            <group>
+              <field name="opciones_solicita_ids" widget="many2many_tags" groups="fp_social.fp_user,fp_social.fp_manager"/>
+            </group>
+          </group>
+       <!-- cambios 2.2 by gcastillo -->
+          <group>
+            <group>
+            <field name="datos_derivacion"/>
+            </group>
+          </group>
+       <!-- cambios 2.2 by gcastillo -->
+          <label string="Observaciones en el momento de la solicitud"/>
+          <group>
+            <field name="observaciones_datos_generales" nolabel="1" placeholder="OBSERVACIONES (en el momento de la solicitud)"/>
+          </group>
+          <separator string="Para participantes:" style="font-size:15px;"/>
+          <group>
+            <field name="documentos" string="Subir documentos: DNI/NIE/PAS" filename="documentos_nombre"/>
+            <field name="documentos_nombre" invisible="1"/>
+
+            <field name="pasaporte" filename="pasaporte_nombre"/>
+            <field name="pasaporte_nombre" invisible="1"/>
+
+            <field name="otro_documento" filename="otro_documento_nombre"/>
+            <field name="otro_documento_nombre" invisible="1"/>
+          </group>
+        </page>
+        <page string="Datos sociales" name="datos_sociales" attrs="{'invisible': [('student', '=', False)]}" groups="fp_social.fp_datos_sociales,fp_social.fp_manager">
+          <group>
+            <separator string="GENOGRAMA FAMILIAR" style="font-size:15px;"/>
+          </group>
+          <group>
+            <field name="genograma" widget="image" nolabel="1" options='{"size": [100, 100]}' colspan="1" filename="nombre_genograma"/>
+            <field name="genomana_download" widget="download_link" nolabel="1" readonly="1" filename="nombre_genograma"/>
+            <field name="nombre_genograma" invisible="1"/>
+          </group>
+          <group>
+            <group>
+              <field name="migrante" help="Personas no nacidas en España independientemente de si tienen NIE o DNI"/>
+              <field name="origen_extranjero" help="Personas nacidas en España cuyos padres eran migrantes"/>
+              <field name="pais_de_origen"/>
+              <field name="centro_municipal"/>
+              <field name="salud_mental"/>
+              <field name="tutela"/>
+              <field name="familia_monoparental"/>
+              <field name="familia_sin_empleo"/>
+              <field name="iai_texto"/>
+              <field name="iai_documento" filename="iai_nombre" attrs="{'invisible': [('iai_texto', '=', False)]}"/>
+              <field name="iai_nombre" invisible="1"/>
+            </group>
+            <group>
+              <field name="minoria_etnica"/>
+              <field name="adicciones"/>
+              <field name="menores"/>
+              <field name="fiscalia"/>
+              <field name="familia_numerosa"/>
+              <field name="otros"/>
+              <field name="ingresos_inferiores_iprem"/>
+            </group>
+            <group>
+              <field name="nucleo_convivencia"/>
+            </group>
+            <group>
+              <field name="objetivos_area_social"/>
+            </group>
+          </group>
+          <group>
+            <separator string="Relaciones familiares" style="font-size:15px;"/>
+          </group>
+          <group>
+            <field name="relaciones" context="{'default_src_partner_id': active_id}" nolabel="1">
+              <form>
+                <group>
+                  <field name="src_partner_id" invisible="1"/>
+                  <field name="relation_type_id"/>
+                  <field name="dst_partner_id"/>
+                </group>
+              </form>
+              <tree editable="bottom">
+                <field name="relation_type_id"/>
+                <field name="dst_partner_id"/>
+              </tree>
+            </field>
+          </group>
+          <separator string="DIARIO" style="font-size:15px;"/>
+          <group>
+            <field name="diario" nolabel="1"/>
+          </group>
+        </page>
+        <page string="Área formativo-Laboral" name="area_formativo" attrs="{'invisible': [('student', '=', False)]}" groups="fp_social.fp_area_formativo_laboral,fp_social.fp_manager">
+          <group>
+            <field name="objetivos_area_formativa"/>
+            <field name="antecedentes_educativos"/>
+          </group>
+          <group>
+            <field name="formacion_realizada"/>
+            <field name="observaciones_area_formativo"/>
+            <!-- <field name="senalar_procedan"/> -->
+          </group>
+          <group>
+            <!-- <label for="orientaciones"></label> <field name="orientaciones" nolabel="1"/> -->
+          </group>
+          <group>
+            <label for="situacion_actual" string="Situación actual:"/>
+            <div name="situacion_actual" style="display:inline-flex; width:100%;">
+              <div style="margin:0 auto;">
+                <label for="estudiando" style="font-weight:bold;">Estudiando</label>
+                <field name="estudiando" style="width:auto;"/>
+              </div>
+              <div style="margin:auto;">
+                <label for="trabajando" style="font-weight:bold;">Trabajando</label>
+                <field name="trabajando" style="width:auto;"/>
+              </div>
+              <div style="margin:0 auto;">
+                <label for="desempleado" style="font-weight:bold;">Desempleado</label>
+                <field name="desempleado" style="width:auto;"/>
+              </div>
+            </div>
+          </group>
+          <separator string="LABORAL(contratos de trabajo)" style="font-size:15px;"/>
+          <group>
+            <field name="contratos_trabajo_ids" nolabel="1">
+              <tree>
+                <field name="fecha"/>
+                <field name="puesto"/>
+                <field name="tipo_contrato"/>
+              </tree>
+            </field>
+          </group>
+        </page>
+        <page string="Área salud" name="area_salud" attrs="{'invisible': [('student', '=', False)]}" groups="fp_social.fp_area_salud,fp_social.fp_manager">
+          <separator string="DISCAPACIDAD" style="font-size:15px;"/>
+          <group>
+            <group>
+              <field name="discapacidad_fisica"/>
+              <field name="discapacidad_intelectual"/>
+            </group>
+            <group>
+              <field name="discapacidad_sensorial"/>
+              <field name="discapacidad_enf_mental"/>
+            </group>
+            <group>
+              <field name="otros_problema_salud"/>
+              <field name="objetivos_area_salud"/>
+              <field name="certificado_discapacidad" filename="nombre_certificado_discapacidad"/>
+              <field name="nombre_certificado_discapacidad" invisible="1"/>
+            </group>
+            <group>
+              <field name="dictamen_tecnico"/>
+              <field name="grado"/>
+            </group>
+          </group>
+          <group>
+            <field name="alergia_o_enfermedades"/>
+            <field name="observaciones_area_salud"/>
+          </group>
+        </page>
+        <page string="Área vivienda" name="area_vivienda" attrs="{'invisible': [('student', '=', False)]}" groups="fp_social.fp_area_vivienda,fp_social.fp_manager">
+          <group>
+            <group>
+              <field name="cr" filename="cr_nombre"/>
+              <field name="cr_nombre" invisible="1"/>
+              <field name="bl" filename="bl_nombre"/>
+              <field name="bl_nombre" invisible="1"/>
+              <field name="pia" filename="pia_nombre"/>
+              <field name="pia_nombre" invisible="1"/>
+              <field name="pai" filename="pai_nombre"/>
+              <field name="pai_nombre" invisible="1"/>
+            </group>
+          </group>
+          <group>
+            <field name="registros"/>
+          </group>
+        </page>
+        <page string="Documentos" name="documentos" attrs="{'invisible': [('student', '=', False)]}" groups="fp_social.fp_documentos,fp_social.fp_manager">
+            <field name="documents_ids">
+              <tree editable="buttom">
+                <field name="notes" style="width: 50%;"/>
+                <field name="date" readonly="1"/>
+                <field name="filename" class="oe_inline" style="width: 25%;" invisible="1"/>
+                <field name="file" class="oe_inline" filename="filename" widget="binary" style="width: 25%;"/>
+              </tree>
+              <form>
+                <group>
+                  <field name="notes"/>
+                  <field name="date" readonly="1"/>
+                  <field name="filename" invisible="1"/>
+                  <field name="file" filename="filename" widget="binary"/>
+                </group>
+              </form>
+            </field>
+        </page>
+      </xpath>
+      <xpath expr="//sheet/notebook/page/field/form/sheet/group/group[2]/field[@name='title']" position="after">
+        <field name="relacion"/>
+      </xpath>
+    </field>
+  </record>
+
+</odoo>

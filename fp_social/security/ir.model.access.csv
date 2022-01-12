@@ -1,0 +1,13 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_res_partner_user,access_res_partner_user,model_res_partner,fp_social.fp_user,1,0,0,0
+access_res_partner_manager,access_res_partner_manager,model_res_partner,fp_social.fp_manager,1,1,1,1
+access_contrato_trabajo_user,access_contrato_trabajo_user,model_contrato_trabajo,fp_social.fp_user,1,0,0,0
+access_contrato_trabajo_manager,access_contrato_trabajo_manager,model_contrato_trabajo,fp_social.fp_manager,1,1,1,1
+access_opciones_solicita_user,access_opciones_solicita_user,model_opciones_solicita,fp_social.fp_user,1,0,0,0
+access_opciones_solicita_manager,access_opciones_solicita_manager,model_opciones_solicita,fp_social.fp_manager,1,1,1,1
+access_binary_file_user,access_binary_file_user,model_binary_file,fp_social.fp_user,1,0,0,0
+access_binary_file_manager,access_binary_file_manager,model_binary_file,fp_social.fp_manager,1,1,1,1
+access_relation_type_user,access_relation_type,model_relation_type,fp_social.fp_user,1,0,0,0
+access_relation_type_manager,access_relation_type,model_relation_type,fp_social.fp_manager,1,1,1,1
+access_relation_user,access_relation,model_relation,fp_social.fp_user,1,0,0,0
+access_relation_manager,access_relation,model_relation,fp_social.fp_manager,1,1,1,1

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <record id="padre" model="relation.type">
+    <field name="name">Padre</field>
+  </record>
+
+  <record id="hijo" model="relation.type">
+    <field name="name">Hijo</field>
+  </record>
+
+  <record id="hermano" model="relation.type">
+    <field name="name">Hermano</field>
+  </record>
+
+  <record id="tutor" model="relation.type">
+    <field name="name">Tutor</field>
+  </record>
+
+  <record id="tutorado" model="relation.type">
+    <field name="name">Tutorado</field>
+  </record>
+
+  <record id="abuelo" model="relation.type">
+    <field name="name">Abuelo</field>
+  </record>
+
+  <record id="nieto" model="relation.type">
+    <field name="name">Nieto</field>
+  </record>
+
+  <record id="tio" model="relation.type">
+    <field name="name">Tío</field>
+  </record>
+
+  <record id="sobrino" model="relation.type">
+    <field name="name">Sobrino</field>
+  </record>
+
+  <record id="primo" model="relation.type">
+    <field name="name">Primo</field>
+  </record>
+
+  <record id="otro" model="relation.type">
+    <field name="name">Otro</field>
+  </record>
+
+
+  <!--Reverse relations-->
+
+  <record id="padre" model="relation.type">
+    <field name="reverse_id" ref="fp_social.hijo"/>
+  </record>
+
+  <record id="hijo" model="relation.type">
+    <field name="reverse_id" ref="fp_social.padre"/>
+  </record>
+
+  <record id="hermano" model="relation.type">
+    <field name="reverse_id" ref="fp_social.hermano"/>
+  </record>
+
+  <record id="tutor" model="relation.type">
+    <field name="reverse_id" ref="fp_social.tutorado"/>
+  </record>
+
+  <record id="tutorado" model="relation.type">
+    <field name="reverse_id" ref="fp_social.tutor"/>
+  </record>
+
+  <record id="abuelo" model="relation.type">
+    <field name="reverse_id" ref="fp_social.nieto"/>
+  </record>
+
+  <record id="nieto" model="relation.type">
+    <field name="reverse_id" ref="fp_social.abuelo"/>
+  </record>
+
+  <record id="tio" model="relation.type">
+    <field name="reverse_id" ref="fp_social.sobrino"/>
+  </record>
+
+  <record id="sobrino" model="relation.type">
+    <field name="reverse_id" ref="fp_social.tio"/>
+  </record>
+
+  <record id="primo" model="relation.type">
+    <field name="reverse_id" ref="fp_social.primo"/>
+  </record>
+
+  <record id="otro" model="relation.type">
+    <field name="reverse_id" ref="fp_social.otro"/>
+  </record>
+
+</odoo>

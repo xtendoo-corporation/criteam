@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <record id="view_opciones_solicita_form" model="ir.ui.view">
+    <field name="name">view.opciones.solicita.form</field>
+    <field name="model">opciones.solicita</field>
+    <field name="arch" type="xml">
+      <form string="Opciones Solicita">
+        <sheet>
+          <group name="main">
+            <field name="nombre"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="accion_opciones_soicita" model="ir.actions.act_window">
+  <field name="name">Opciones Solicita</field>
+  <field name="res_model">opciones.solicita</field>
+  <field name="view_mode">tree,form</field>
+  <field name="help" type="html">
+      <p class="oe_view_nocontent_create">
+          Click to create a new label.
+      </p>
+  </field>
+  </record>
+
+
+  <menuitem id="menu_opciones_solicita" parent="contacts.res_partner_menu_config" action="accion_opciones_soicita" sequence="20"/>
+
+</odoo>

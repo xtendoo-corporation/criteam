@@ -1,0 +1,838 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* fp_social
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-01-09 10:11+0000\n"
+"PO-Revision-Date: 2019-01-09 10:11+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: fp_social
+#: selection:res.partner,nivel_estudios:0
+msgid "1º ESO"
+msgstr "1º ESO"
+
+#. module: fp_social
+#: selection:res.partner,nivel_estudios:0
+msgid "2º ESO"
+msgstr "2º ESO"
+
+#. module: fp_social
+#: selection:res.partner,nivel_estudios:0
+msgid "3º ESO"
+msgstr "3º ESO"
+
+#. module: fp_social
+#: selection:res.partner,nivel_estudios:0
+msgid "4º ESO"
+msgstr "4º ESO"
+
+#. module: fp_social
+#: model:ir.model,name:fp_social.model_mail_activity
+msgid "Activity"
+msgstr "Actividad"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_activity_count
+#: model:ir.model.fields,field_description:fp_social.field_res_users_activity_count
+msgid "Activity Count"
+msgstr "Activity Count"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_adicciones
+#: model:ir.model.fields,field_description:fp_social.field_res_users_adicciones
+msgid "Adicciones"
+msgstr "Adicciones"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_alergia_o_enfermedades
+#: model:ir.model.fields,field_description:fp_social.field_res_users_alergia_o_enfermedades
+msgid "Alergias o enfermedades a tener en cuenta"
+msgstr "Alergias o enfermedades a tener en cuenta"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_antecedentes_educativos
+#: model:ir.model.fields,field_description:fp_social.field_res_users_antecedentes_educativos
+msgid "Antecedentes educativos"
+msgstr "Antecedentes educativos"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_bl
+#: model:ir.model.fields,field_description:fp_social.field_res_users_bl
+msgid "BL"
+msgstr "BL"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_certificado_discapacidad
+#: model:ir.model.fields,field_description:fp_social.field_res_users_certificado_discapacidad
+msgid "CERTIFICADO DE DISCAPACIDAD"
+msgstr "CERTIFICADO DE DISCAPACIDAD"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_cr
+#: model:ir.model.fields,field_description:fp_social.field_res_users_cr
+msgid "CR"
+msgstr "CR"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_centro_municipal
+#: model:ir.model.fields,field_description:fp_social.field_res_users_centro_municipal
+msgid "Centro municipal/Servicios sociales"
+msgstr "Centro municipal/Servicios sociales"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_nombre_certificado_discapacidad
+#: model:ir.model.fields,field_description:fp_social.field_res_users_nombre_certificado_discapacidad
+msgid "Certificado discapacidad"
+msgstr "Certificado discapacidad"
+
+#. module: fp_social
+#: model:ir.actions.act_window,help:fp_social.accion_opciones_soicita
+msgid "Click to create a new label."
+msgstr "Click to create a new label."
+
+#. module: fp_social
+#: model:ir.model,name:fp_social.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_contrato_trabajo_contacto_id
+#: model:ir.model.fields,field_description:fp_social.field_opciones_solicita_contacto_id
+msgid "Contacto"
+msgstr "Contacto"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_binary_file_create_uid
+#: model:ir.model.fields,field_description:fp_social.field_contrato_trabajo_create_uid
+#: model:ir.model.fields,field_description:fp_social.field_opciones_solicita_create_uid
+#: model:ir.model.fields,field_description:fp_social.field_relation_create_uid
+#: model:ir.model.fields,field_description:fp_social.field_relation_type_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_binary_file_create_date
+#: model:ir.model.fields,field_description:fp_social.field_contrato_trabajo_create_date
+#: model:ir.model.fields,field_description:fp_social.field_opciones_solicita_create_date
+#: model:ir.model.fields,field_description:fp_social.field_relation_create_date
+#: model:ir.model.fields,field_description:fp_social.field_relation_type_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_diario
+#: model:ir.model.fields,field_description:fp_social.field_res_users_diario
+#: model:ir.ui.view,arch_db:fp_social.view_partner_inherit_form
+msgid "DIARIO"
+msgstr "DIARIO"
+
+#. module: fp_social
+#: model:ir.ui.view,arch_db:fp_social.view_partner_inherit_form
+msgid "DISCAPACIDAD"
+msgstr "DISCAPACIDAD"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_binary_file_date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: fp_social
+#: model:ir.ui.view,arch_db:fp_social.view_partner_inherit_form
+msgid "Datos generales"
+msgstr "Datos generales"
+
+#. module: fp_social
+#: model:ir.ui.view,arch_db:fp_social.view_partner_inherit_form
+msgid "Datos sociales"
+msgstr "Datos sociales"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_desempleado
+#: model:ir.model.fields,field_description:fp_social.field_res_users_desempleado
+#: model:ir.ui.view,arch_db:fp_social.view_partner_inherit_form
+msgid "Desempleado"
+msgstr "Desempleado"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_relation_dst_partner_id
+msgid "Destination Partner"
+msgstr "Contacto destino"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_registros
+#: model:ir.model.fields,field_description:fp_social.field_res_users_registros
+msgid "Diario"
+msgstr "Diario"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_dictamen_tecnico
+#: model:ir.model.fields,field_description:fp_social.field_res_users_dictamen_tecnico
+msgid "Dictamen técnico"
+msgstr "Dictamen técnico"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_binary_file_display_name
+#: model:ir.model.fields,field_description:fp_social.field_contrato_trabajo_display_name
+#: model:ir.model.fields,field_description:fp_social.field_opciones_solicita_display_name
+#: model:ir.model.fields,field_description:fp_social.field_relation_display_name
+#: model:ir.model.fields,field_description:fp_social.field_relation_type_display_name
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: fp_social
+#: selection:res.partner,nivel_estudios:0
+msgid "Doctorado"
+msgstr "Doctorado"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_iai_documento
+#: model:ir.model.fields,field_description:fp_social.field_res_users_iai_documento
+msgid "Documento IAI"
+msgstr "Documento IAI"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_documents_ids
+#: model:ir.model.fields,field_description:fp_social.field_res_users_documents_ids
+#: model:ir.ui.view,arch_db:fp_social.view_partner_inherit_form
+msgid "Documentos"
+msgstr "Documentos"
+
+#. module: fp_social
+#: selection:res.partner,nivel_estudios:0
+msgid "ESO"
+msgstr "ESO"
+
+#. module: fp_social
+#: selection:res.partner,nivel_estudios:0
+msgid "Educacion Primaria"
+msgstr "Educacion Primaria"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_discapacidad_enf_mental
+#: model:ir.model.fields,field_description:fp_social.field_res_users_discapacidad_enf_mental
+msgid "Enfermedad Mental"
+msgstr "Enfermedad Mental"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_nivel_estudios_especifico
+#: model:ir.model.fields,field_description:fp_social.field_res_users_nivel_estudios_especifico
+msgid "Especificar"
+msgstr "Especificar"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_estudiando
+#: model:ir.model.fields,field_description:fp_social.field_res_users_estudiando
+#: model:ir.ui.view,arch_db:fp_social.view_partner_inherit_form
+msgid "Estudiando"
+msgstr "Estudiando"
+
+#. module: fp_social
+#: model:ir.module.category,name:fp_social.fp_security
+msgid "FP Social"
+msgstr "FP Social"
+
+#. module: fp_social
+#: selection:res.partner,nivel_estudios:0
+msgid "FPB"
+msgstr "FPB"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_familia_monoparental
+#: model:ir.model.fields,field_description:fp_social.field_res_users_familia_monoparental
+msgid "Familia Monoparental"
+msgstr "Familia Monoparental"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_familia_numerosa
+#: model:ir.model.fields,field_description:fp_social.field_res_users_familia_numerosa
+msgid "Familia Numerosa"
+msgstr "Familia Numerosa"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_familia_sin_empleo
+#: model:ir.model.fields,field_description:fp_social.field_res_users_familia_sin_empleo
+msgid "Familia sin empleo"
+msgstr "Familia sin empleo"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_contrato_trabajo_fecha
+msgid "Fecha"
+msgstr "Fecha"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_fecha_alta
+#: model:ir.model.fields,field_description:fp_social.field_res_users_fecha_alta
+msgid "Fecha alta"
+msgstr "Fecha alta"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_fecha_baja
+#: model:ir.model.fields,field_description:fp_social.field_res_users_fecha_baja
+msgid "Fecha baja"
+msgstr "Fecha baja"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_fecha_nacimiento
+#: model:ir.model.fields,field_description:fp_social.field_res_users_fecha_nacimiento
+msgid "Fecha de Nacimiento"
+msgstr "Fecha de Nacimiento"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_fecha_solicitud
+#: model:ir.model.fields,field_description:fp_social.field_res_users_fecha_solicitud
+msgid "Fecha de solicitud"
+msgstr "Fecha de solicitud"
+
+#. module: fp_social
+#: selection:res.partner,genero:0
+msgid "Femenino"
+msgstr "Femenino"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_binary_file_file
+msgid "File"
+msgstr "Archivo"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_binary_file_filename
+msgid "File Name"
+msgstr "Nombre archivo"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_binary_file_notes
+msgid "File Notes"
+msgstr "Notas archivo"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_fiscalia
+#: model:ir.model.fields,field_description:fp_social.field_res_users_fiscalia
+msgid "Fiscalía"
+msgstr "Fiscalía"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_formacion_realizada
+#: model:ir.model.fields,field_description:fp_social.field_res_users_formacion_realizada
+msgid "Formación realizada"
+msgstr "Formación realizada"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_discapacidad_fisica
+#: model:ir.model.fields,field_description:fp_social.field_res_users_discapacidad_fisica
+msgid "Física"
+msgstr "Física"
+
+#. module: fp_social
+#: model:ir.ui.view,arch_db:fp_social.view_partner_inherit_form
+msgid "GENOGRAMA FAMILIAR"
+msgstr "GENOGRAMA FAMILIAR"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_genomana_download
+#: model:ir.model.fields,field_description:fp_social.field_res_users_genomana_download
+msgid "Genograma Download"
+msgstr "Genograma Download"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_genograma
+#: model:ir.model.fields,field_description:fp_social.field_res_users_genograma
+msgid "Genograma Familiar"
+msgstr "Genograma Familiar"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_grado
+#: model:ir.model.fields,field_description:fp_social.field_res_users_grado
+msgid "Grado"
+msgstr "Grado"
+
+#. module: fp_social
+#: selection:res.partner,nivel_estudios:0
+msgid "Grado Medio/Bachillerato"
+msgstr "Grado Medio/Bachillerato"
+
+#. module: fp_social
+#: selection:res.partner,nivel_estudios:0
+msgid "Grado Superior"
+msgstr "Grado Superior"
+
+#. module: fp_social
+#: selection:res.partner,nivel_estudios:0
+msgid "Grado Universitario"
+msgstr "Grado Universitario"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_iai_texto
+#: model:ir.model.fields,field_description:fp_social.field_res_users_iai_texto
+msgid "IAI"
+msgstr "IAI"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_binary_file_id
+#: model:ir.model.fields,field_description:fp_social.field_contrato_trabajo_id
+#: model:ir.model.fields,field_description:fp_social.field_opciones_solicita_id
+#: model:ir.model.fields,field_description:fp_social.field_relation_id
+#: model:ir.model.fields,field_description:fp_social.field_relation_type_id
+msgid "ID"
+msgstr "ID (identificación)"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_genero
+#: model:ir.model.fields,field_description:fp_social.field_res_users_genero
+msgid "Identidad de Género"
+msgstr "Identidad de Género"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_discapacidad_intelectual
+#: model:ir.model.fields,field_description:fp_social.field_res_users_discapacidad_intelectual
+msgid "Intelectual"
+msgstr "Intelectual"
+
+#. module: fp_social
+#: model:ir.ui.view,arch_db:fp_social.view_partner_inherit_form
+msgid "LABORAL(contratos de trabajo)"
+msgstr "LABORAL(contratos de trabajo)"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_contratos_trabajo_ids
+#: model:ir.model.fields,field_description:fp_social.field_res_users_contratos_trabajo_ids
+msgid "Laboral"
+msgstr "Laboral"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_binary_file___last_update
+#: model:ir.model.fields,field_description:fp_social.field_contrato_trabajo___last_update
+#: model:ir.model.fields,field_description:fp_social.field_opciones_solicita___last_update
+#: model:ir.model.fields,field_description:fp_social.field_relation___last_update
+#: model:ir.model.fields,field_description:fp_social.field_relation_type___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_binary_file_write_uid
+#: model:ir.model.fields,field_description:fp_social.field_contrato_trabajo_write_uid
+#: model:ir.model.fields,field_description:fp_social.field_opciones_solicita_write_uid
+#: model:ir.model.fields,field_description:fp_social.field_relation_type_write_uid
+#: model:ir.model.fields,field_description:fp_social.field_relation_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización de"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_binary_file_write_date
+#: model:ir.model.fields,field_description:fp_social.field_contrato_trabajo_write_date
+#: model:ir.model.fields,field_description:fp_social.field_opciones_solicita_write_date
+#: model:ir.model.fields,field_description:fp_social.field_relation_type_write_date
+#: model:ir.model.fields,field_description:fp_social.field_relation_write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: fp_social
+#: model:res.groups,name:fp_social.fp_manager
+msgid "Manager"
+msgstr "Responsable"
+
+#. module: fp_social
+#: selection:res.partner,genero:0
+msgid "Masculino"
+msgstr "Masculino"
+
+#. module: fp_social
+#: selection:res.partner,nivel_estudios:0
+msgid "Master"
+msgstr "Master"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_menores
+#: model:ir.model.fields,field_description:fp_social.field_res_users_menores
+msgid "Menores"
+msgstr "Menores"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_migrante
+#: model:ir.model.fields,field_description:fp_social.field_res_users_migrante
+msgid "Migrante"
+msgstr "Migrante"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_minoria_etnica
+#: model:ir.model.fields,field_description:fp_social.field_res_users_minoria_etnica
+msgid "Minoria étnica"
+msgstr "Minoria étnica"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_nivel_estudios
+#: model:ir.model.fields,field_description:fp_social.field_res_users_nivel_estudios
+msgid "Nivel de estudios"
+msgstr "Nivel de estudios"
+
+#. module: fp_social
+#: selection:res.partner,genero:0
+msgid "No Binario"
+msgstr "No Binario"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_opciones_solicita_nombre
+msgid "Nombre"
+msgstr "Nombre"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_bl_nombre
+#: model:ir.model.fields,field_description:fp_social.field_res_users_bl_nombre
+msgid "Nombre BL"
+msgstr "Nombre BL"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_cr_nombre
+#: model:ir.model.fields,field_description:fp_social.field_res_users_cr_nombre
+msgid "Nombre CR"
+msgstr "Nombre CR"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_iai_nombre
+#: model:ir.model.fields,field_description:fp_social.field_res_users_iai_nombre
+msgid "Nombre IAI"
+msgstr "Nombre IAI"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_pai_nombre
+#: model:ir.model.fields,field_description:fp_social.field_res_users_pai_nombre
+msgid "Nombre PAI"
+msgstr "Nombre PAI"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_pia_nombre
+#: model:ir.model.fields,field_description:fp_social.field_res_users_pia_nombre
+msgid "Nombre PIA"
+msgstr "Nombre PIA"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_documentos_nombre
+#: model:ir.model.fields,field_description:fp_social.field_res_users_documentos_nombre
+msgid "Nombre del documento"
+msgstr "Nombre del documento"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_nombre_genograma
+#: model:ir.model.fields,field_description:fp_social.field_res_users_nombre_genograma
+msgid "Nombre genograma"
+msgstr "Nombre genograma"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_otro_documento_nombre
+#: model:ir.model.fields,field_description:fp_social.field_res_users_otro_documento_nombre
+msgid "Nombre otro documento"
+msgstr "Nombre otro documento"
+
+#. module: fp_social
+#: model:ir.ui.view,arch_db:fp_social.view_partner_inherit_form
+msgid "Nombre y Apellidos"
+msgstr "Nombre y Apellidos"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_nucleo_convivencia
+#: model:ir.model.fields,field_description:fp_social.field_res_users_nucleo_convivencia
+msgid "Nucleo de convivencia"
+msgstr "Nucleo de convivencia"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_objetivos_area_formativa
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_objetivos_area_salud
+#: model:ir.model.fields,field_description:fp_social.field_res_users_objetivos_area_formativa
+#: model:ir.model.fields,field_description:fp_social.field_res_users_objetivos_area_salud
+msgid "OBJETIVOS"
+msgstr "OBJETIVOS"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_observaciones_area_formativo
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_observaciones_area_salud
+#: model:ir.model.fields,field_description:fp_social.field_res_users_observaciones_area_formativo
+#: model:ir.model.fields,field_description:fp_social.field_res_users_observaciones_area_salud
+msgid "OBSERVACIONES"
+msgstr "OBSERVACIONES"
+
+#. module: fp_social
+#: model:ir.ui.view,arch_db:fp_social.view_partner_inherit_form
+msgid "OBSERVACIONES (en el momento de la solicitud)"
+msgstr "OBSERVACIONES (en el momento de la solicitud)"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_orientaciones
+#: model:ir.model.fields,field_description:fp_social.field_res_users_orientaciones
+msgid "ORIENTACIONES"
+msgstr "ORIENTACIONES"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_otros_problema_salud
+#: model:ir.model.fields,field_description:fp_social.field_res_users_otros_problema_salud
+msgid "OTROS PROBLEMAS DE SALUD"
+msgstr "OTROS PROBLEMAS DE SALUD"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_objetivos_area_social
+#: model:ir.model.fields,field_description:fp_social.field_res_users_objetivos_area_social
+msgid "Objetivos"
+msgstr "Objetivos"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_observaciones_datos_generales
+#: model:ir.model.fields,field_description:fp_social.field_res_users_observaciones_datos_generales
+msgid "Observaciones"
+msgstr "Observaciones"
+
+#. module: fp_social
+#: model:ir.actions.act_window,name:fp_social.accion_opciones_soicita
+#: model:ir.ui.menu,name:fp_social.menu_opciones_solicita
+#: model:ir.ui.view,arch_db:fp_social.view_opciones_solicita_form
+msgid "Opciones Solicita"
+msgstr "Opciones Solicita"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_opciones_solicita_ids
+#: model:ir.model.fields,field_description:fp_social.field_res_users_opciones_solicita_ids
+msgid "Opciones que solicita"
+msgstr "Opciones que solicita"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_origen_extranjero
+#: model:ir.model.fields,field_description:fp_social.field_res_users_origen_extranjero
+msgid "Origen extranjero"
+msgstr "Origen extranjero"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_otro_documento
+#: model:ir.model.fields,field_description:fp_social.field_res_users_otro_documento
+msgid "Otro Documento"
+msgstr "Otro Documento"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_otros
+#: model:ir.model.fields,field_description:fp_social.field_res_users_otros
+#: selection:res.partner,nivel_estudios:0
+msgid "Otros"
+msgstr "Otros"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_pai
+#: model:ir.model.fields,field_description:fp_social.field_res_users_pai
+msgid "PAI"
+msgstr "PAI"
+
+#. module: fp_social
+#: selection:res.partner,nivel_estudios:0
+msgid "PCI"
+msgstr "PCI"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_pia
+#: model:ir.model.fields,field_description:fp_social.field_res_users_pia
+msgid "PIA"
+msgstr "PIA"
+
+#. module: fp_social
+#: model:ir.ui.view,arch_db:fp_social.view_partner_inherit_form
+msgid "Para participantes:"
+msgstr "Para participantes:"
+
+#. module: fp_social
+#: model:ir.ui.view,arch_db:fp_social.view_partner_inherit_form
+msgid "Para solicitudes:"
+msgstr "Para solicitudes:"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_binary_file_partner_id
+#: model:ir.model.fields,field_description:fp_social.field_mail_activity_partner_id
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_pasaporte
+#: model:ir.model.fields,field_description:fp_social.field_res_users_pasaporte
+msgid "Pasaporte"
+msgstr "Pasaporte"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_pais_de_origen
+#: model:ir.model.fields,field_description:fp_social.field_res_users_pais_de_origen
+msgid "País de Origen"
+msgstr "País de Origen"
+
+#. module: fp_social
+#: selection:res.partner,senalar_procedan:0
+msgid "Procedan 1"
+msgstr "Procedan 1"
+
+#. module: fp_social
+#: selection:res.partner,senalar_procedan:0
+msgid "Procedan 2"
+msgstr "Procedan 2"
+
+#. module: fp_social
+#: selection:res.partner,senalar_procedan:0
+msgid "Procedan 3"
+msgstr "Procedan 3"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_contrato_trabajo_puesto
+msgid "Puesto"
+msgstr "Puesto"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_relaciones
+#: model:ir.model.fields,field_description:fp_social.field_res_users_relaciones
+msgid "Relaciones"
+msgstr "Relaciones"
+
+#. module: fp_social
+#: model:ir.ui.view,arch_db:fp_social.view_partner_inherit_form
+msgid "Relaciones familiares"
+msgstr "Relaciones familiares"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_relacion
+#: model:ir.model.fields,field_description:fp_social.field_res_users_relacion
+msgid "Relación"
+msgstr "Relación"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_relation_relation_type_id
+#: model:ir.model.fields,field_description:fp_social.field_relation_type_name
+msgid "Relation Type"
+msgstr "Tipo de Relación"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_relation_type_reverse_id
+msgid "Reverse Relation Type"
+msgstr "Tipo de Relación Inversa"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_salud_mental
+#: model:ir.model.fields,field_description:fp_social.field_res_users_salud_mental
+msgid "Salud mental"
+msgstr "Salud mental"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_discapacidad_sensorial
+#: model:ir.model.fields,field_description:fp_social.field_res_users_discapacidad_sensorial
+msgid "Sensorial"
+msgstr "Sensorial"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_senalar_procedan
+#: model:ir.model.fields,field_description:fp_social.field_res_users_senalar_procedan
+msgid "Señalar las que procedan"
+msgstr "Señalar las que procedan"
+
+#. module: fp_social
+#: model:ir.ui.view,arch_db:fp_social.view_partner_inherit_form
+msgid "Situación actual:"
+msgstr "Situación actual:"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_relation_src_partner_id
+msgid "Source Partner"
+msgstr "Contacto Origen"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_documentos
+#: model:ir.model.fields,field_description:fp_social.field_res_users_documentos
+msgid "Subir documentos"
+msgstr "Subir documentos"
+
+#. module: fp_social
+#: model:ir.ui.view,arch_db:fp_social.view_partner_inherit_form
+msgid "Subir documentos: DNI/NIE/PAS"
+msgstr "Subir documentos: DNI/NIE/PAS"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_telefono_2
+#: model:ir.model.fields,field_description:fp_social.field_res_users_telefono_2
+msgid "Teléfono 2"
+msgstr "Teléfono 2"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_telefono_3
+#: model:ir.model.fields,field_description:fp_social.field_res_users_telefono_3
+msgid "Teléfono 3"
+msgstr "Teléfono 3"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_contrato_trabajo_tipo_contrato
+msgid "Tipo contrato"
+msgstr "Tipo contrato"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_trabajando
+#: model:ir.model.fields,field_description:fp_social.field_res_users_trabajando
+#: model:ir.ui.view,arch_db:fp_social.view_partner_inherit_form
+msgid "Trabajando"
+msgstr "Trabajando"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_tutela
+#: model:ir.model.fields,field_description:fp_social.field_res_users_tutela
+msgid "Tutela de adultos"
+msgstr "Tutela de adultos"
+
+#. module: fp_social
+#: model:res.groups,name:fp_social.fp_user
+msgid "User"
+msgstr "Usuario"
+
+#. module: fp_social
+#: model:ir.model,name:fp_social.model_binary_file
+msgid "binary.file"
+msgstr "binary.file"
+
+#. module: fp_social
+#: model:ir.model,name:fp_social.model_contrato_trabajo
+msgid "contrato.trabajo"
+msgstr "contrato.trabajo"
+
+#. module: fp_social
+#: model:ir.model.fields,field_description:fp_social.field_res_partner_pasaporte_nombre
+#: model:ir.model.fields,field_description:fp_social.field_res_users_pasaporte_nombre
+msgid "nombre del pasaporte"
+msgstr "nombre del pasaporte"
+
+#. module: fp_social
+#: model:ir.model,name:fp_social.model_opciones_solicita
+msgid "opciones.solicita"
+msgstr "opciones.solicita"
+
+#. module: fp_social
+#: model:ir.model,name:fp_social.model_relation
+msgid "relation"
+msgstr "relación"
+
+#. module: fp_social
+#: model:ir.model,name:fp_social.model_relation_type
+msgid "relation.type"
+msgstr "relation.type"
+
+#. module: fp_social
+#: model:ir.ui.view,arch_db:fp_social.view_partner_inherit_form
+msgid "¿Cómo ha conocido el proyecto?"
+msgstr "¿Cómo ha conocido el proyecto?"
+
+#. module: fp_social
+#: model:ir.ui.view,arch_db:fp_social.view_partner_inherit_form
+msgid "Área formativo-Laboral"
+msgstr "Área formativo-Laboral"
+
+#. module: fp_social
+#: model:ir.ui.view,arch_db:fp_social.view_partner_inherit_form
+msgid "Área salud"
+msgstr "Área salud"
+
+#. module: fp_social
+#: model:ir.ui.view,arch_db:fp_social.view_partner_inherit_form
+msgid "Área vivienda"
+msgstr "Área vivienda"
+
